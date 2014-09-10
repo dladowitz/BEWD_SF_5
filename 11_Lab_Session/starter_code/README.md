@@ -1,4 +1,4 @@
-![GeneralAssemb.ly](http://studio.generalassemb.ly/GA_Slide_Assets/Exercise_icon_md.png)
+ ![GeneralAssemb.ly](http://studio.generalassemb.ly/GA_Slide_Assets/Exercise_icon_md.png)
 
 Time to review. You now have all the necessary knowledge to build a small Rails app. Let's build!
 
@@ -7,7 +7,7 @@ Time to review. You now have all the necessary knowledge to build a small Rails 
 
 We are going to build an app similar to [Bitly](https://bitly.com), called Ritly. The challenge is going to be understanding the flow of control in a Rails app.
 
-Instructors demo the app for students.
+Your instructor will demo the Bitly app for you.
 
 Here is a brief overview of the app.
 
@@ -34,7 +34,7 @@ Here are a few hints.
 ####The routes.rb file
 
 ```ruby
-Ritly::Application.routes.draw do
+Rails.application.routes.draw do
 	root "home#index"
 	resources :urls #TODO: restrict this to just :create, :new and :show
 
@@ -47,7 +47,7 @@ end
 
 *	show.html.erb
 	*	Visitors are redirected to the show page after they request a randomly generated code for their URL link.
-	*	Displays the random code that was generated: "Your code is: random_code" Go to localhost:3000/random_code to visit your URL.
+	*	Displays the random code that was generated: "Your code is: *random_code*. Go to localhost:3000/random_code to visit your URL.
 
 
 ####Generating a Random Number or Hash
@@ -71,7 +71,7 @@ You will build Rewsly during lesson 11 & 12.
 
 Here are the features needed by next class.
 
-For now City times is only interested in linking to other news sources instead of writing their own news.
+City Times is only interested in linking to other news sources instead of writing their own news.
 
 *	The front page welcomes visitors "Welcome to Rewsly" and list all titles in the stories table.
 *	Visitors can view a story's upvotes, category and link to more details by clicking on the title from the front page.
