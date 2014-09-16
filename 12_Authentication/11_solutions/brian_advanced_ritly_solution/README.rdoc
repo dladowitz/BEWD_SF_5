@@ -1,0 +1,24 @@
+## Ritly: Advanced Level + Test-Driven Development
+
+This is Brian's advanced level version of Ritly. If you're curious about how this would be done in a "real world" setting, check this out.
+
+Remember to do "bundle install" from the command line in this folder.
+
+### Interesting files with comments:
+
+- routes.rb - comments on how routes work.
+- url.rb - url model has a different way of setting the code.
+- urls_controller.rb - advanced use of controllers and models.
+- application.html.erb - uses the "flash" to display user errors.
+
+### Things to play with:
+
+- run "rails server" and look at how the site works.
+- run "rake routes" and view the routes. How do they interact with the controller?
+
+### ADVANCED: Test-Driven Development
+
+This may be confusing if you are not already feeling comfortable with Rails. It might be good to come back to it later.
+
+- run the "rspec" command in the command line and see the output of the tests.
+- look around in the spec folder - this is where all of the tests are.

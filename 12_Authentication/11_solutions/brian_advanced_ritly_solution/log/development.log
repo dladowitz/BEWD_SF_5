@@ -1,0 +1,2484 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 19:35:38 -0700
+
+AbstractController::ActionNotFound (The action 'new' could not be found for UrlsController):
+  actionpack (4.1.4) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.7ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2014-09-09 19:35:40 -0700
+Processing by UrlsController#index as HTML
+  Rendered urls/index.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"url", :method=>"POST"}):
+    2: 
+    3: <%= number_to_human(2821109907456) %>
+    4: 
+    5: <%= form_tag controller: 'url', action: 'new', method: 'POST' do %>
+    6:   <%= text_field_tag 'long_url' %>
+    7:   <%= button_tag 'Submit' %>
+    8: <% end %>
+  app/views/urls/index.html.erb:5:in `_app_views_urls_index_html_erb__1133698222982161142_70197182272600'
+
+
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.1ms)
+
+
+Started GET "/urls" for 127.0.0.1 at 2014-09-09 19:35:55 -0700
+Processing by UrlsController#index as HTML
+  Rendered urls/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 709ms (Views: 708.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 19:35:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 19:35:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 19:35:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 19:35:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 19:35:56 -0700
+  [1m[36m (10.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUrls (20140910024005)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "urls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140910024005"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 19:43:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 71ms (Views: 66.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 19:43:52 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 19:43:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 19:43:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 19:43:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 19:43:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 19:43:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 19:43:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 19:44:35 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 19:44:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 19:44:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 19:44:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 19:44:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 19:44:35 -0700
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "urls"[0m
+  [1m[35mUrl Load (0.3ms)[0m  SELECT  "urls".* FROM "urls"   ORDER BY "urls"."id" ASC LIMIT 1
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT  "urls".* FROM "urls"   ORDER BY "urls"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "urls" ("code", "created_at", "link", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "aisdjflij"], ["created_at", "2014-09-10 02:49:30.363396"], ["link", "http://google.com"], ["updated_at", "2014-09-10 02:49:30.363396"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT  "urls".* FROM "urls"   ORDER BY "urls"."id" ASC LIMIT 1[0m
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"   ORDER BY "urls"."id" ASC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 20:19:52 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 20:19:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 20:19:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 20:19:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 20:19:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 20:19:52 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-09 20:19:58 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"http://google.com"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-09-10 03:19:58.274757"], ["link", "http://google.com"], ["updated_at", "2014-09-10 03:19:58.274757"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/urls/2
+Completed 302 Found in 17ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2014-09-09 20:19:58 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered urls/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 54.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 20:19:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 20:19:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 20:19:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 20:19:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 20:19:58 -0700
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2014-09-09 20:20:28 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered urls/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 20:20:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 20:20:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 20:20:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 20:20:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 20:20:28 -0700
+
+
+Started GET "/urls/2" for 127.0.0.1 at 2014-09-09 20:38:21 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered urls/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 46.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 20:38:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 20:38:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 20:38:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 20:38:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 20:38:22 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-09 20:38:23 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 20:38:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 20:38:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 20:38:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-09 20:38:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 20:38:24 -0700
+
+
+Started GET "/aisdjflij" for 127.0.0.1 at 2014-09-09 20:38:31 -0700
+Processing by UrlsController#redirect as HTML
+  Parameters: {"code"=>"aisdjflij"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aisdjflij' LIMIT 1[0m
+Redirected to http://google.com
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 07:12:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 110ms (Views: 88.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 07:12:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 07:12:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 07:12:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 07:12:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 07:12:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 07:12:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 07:12:59 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 07:13:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:00 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 07:13:18 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"http://google.com"}, "commit"=>"Submit"}
+  [1m[35m (3.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("code", "created_at", "link", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "cnBkRdQVlCQ"], ["created_at", "2014-09-10 14:13:18.953186"], ["link", "http://google.com"], ["updated_at", "2014-09-10 14:13:18.953186"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/urls/3
+Completed 302 Found in 48ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/urls/3" for 127.0.0.1 at 2014-09-10 07:13:18 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered urls/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 07:13:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:19 -0700
+
+
+Started GET "/urls/3" for 127.0.0.1 at 2014-09-10 07:13:26 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered urls/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 07:13:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 07:13:26 -0700
+
+
+Started GET "/cnBkRdQVlCQ" for 127.0.0.1 at 2014-09-10 07:13:33 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"cnBkRdQVlCQ"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'cnBkRdQVlCQ' LIMIT 1[0m
+Redirected to http://google.com
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cnBkRdQVlCQ" for 127.0.0.1 at 2014-09-10 07:14:10 -0700
+Processing by UrlsController#redirector as */*
+  Parameters: {"code"=>"cnBkRdQVlCQ"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'cnBkRdQVlCQ' LIMIT 1
+Redirected to http://google.com
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/aisdjflij" for 127.0.0.1 at 2014-09-10 07:17:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"aisdjflij"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aisdjflij' LIMIT 1
+Person attributes hash
+Redirected to http://google.com
+Completed 302 Found in 32ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:29:03 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (13.2ms)
+  Rendered urls/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 107ms (Views: 102.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:29:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:29:04 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.1ms)
+  Rendered urls/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:29:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:29:09 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.1ms)
+  Rendered urls/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:29:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:29:15 -0700
+Processing by UrlsController#index as HTML
+  Rendered urls/_form.html.erb (4.4ms)
+  Rendered urls/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @url do |f| %>
+    2:   <%= f.text_field :link %>
+    3:   <%= f.submit 'Submit' %>
+    4: <% end %>
+  app/views/urls/_form.html.erb:1:in `_app_views_urls__form_html_erb__2527589026391299848_70184686655400'
+  app/views/urls/index.html.erb:7:in `_app_views_urls_index_html_erb___423307032973510513_70184688699800'
+
+
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:29:28 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (7.8ms)
+  Rendered urls/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 59ms (Views: 53.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:29:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:29:38 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.0ms)
+  Rendered urls/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:29:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:29:39 -0700
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"   ORDER BY "urls"."id" ASC LIMIT 1[0m
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:37:21 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 49ms (Views: 39.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:37:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:21 -0700
+
+
+Started GET "/preview/aisdjflij" for 127.0.0.1 at 2014-09-10 08:37:30 -0700
+
+ActionController::RoutingError (No route matches [GET] "/preview/aisdjflij"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.2ms)
+
+
+Started GET "/aisdjflij/preview" for 127.0.0.1 at 2014-09-10 08:37:35 -0700
+Processing by UrlsController#preview as HTML
+  Parameters: {"code"=>"aisdjflij"}
+  [1m[35mUrl Load (0.3ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aisdjflij' LIMIT 1
+  Rendered urls/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:37:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:35 -0700
+
+
+Started GET "/aisdjflij/preview" for 127.0.0.1 at 2014-09-10 08:37:47 -0700
+Processing by UrlsController#preview as HTML
+  Parameters: {"code"=>"aisdjflij"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aisdjflij' LIMIT 1[0m
+  Rendered urls/preview.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 50ms (Views: 41.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:37:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:37:47 -0700
+
+
+Started GET "/show/1" for 127.0.0.1 at 2014-09-10 08:38:32 -0700
+
+ActionController::RoutingError (No route matches [GET] "/show/1"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.5ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:38:36 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:38:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:38:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:38:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:38:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:38:36 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:39:31 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `full_path' for #<ActionDispatch::Request:0x007faa4ae713e0>):
+    1: The url <%= link_to request.full_path, url_redirector_path(@url.code) %> will redirect to <%= @url.link %>
+  app/views/urls/show.html.erb:1:in `_app_views_urls_show_html_erb___1992802254928564836_70184688850220'
+
+
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.0ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:39:49 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:39:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:39:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:39:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:39:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:39:49 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:40:05 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 102ms (Views: 99.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:40:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:40:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:40:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:40:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:40:05 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:41:02 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 45.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:41:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:03 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:41:13 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 48ms (Views: 39.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:41:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:13 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:41:33 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 59ms (Views: 50.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:33 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:41:33 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:41:44 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:41:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:41:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:42:07 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.6ms)
+  Rendered urls/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:42:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:42:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:42:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:42:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:42:08 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 08:42:15 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"http://google.com"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("code", "created_at", "link", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "Wb23ZOEpQ78"], ["created_at", "2014-09-10 15:42:15.116451"], ["link", "http://google.com"], ["updated_at", "2014-09-10 15:42:15.116451"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/urls/4
+Completed 302 Found in 12ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/urls/4" for 127.0.0.1 at 2014-09-10 08:42:15 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered urls/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 59ms (Views: 46.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:42:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:42:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:42:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:42:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:42:15 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 08:43:31 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"http://google.com"}, "commit"=>"Submit"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"   ORDER BY "urls"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/urls/1
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:43:32 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:43:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:43:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:43:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:43:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:43:32 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:51:49 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 38.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:51:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:51:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:51:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:51:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:51:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:52:19 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.8ms)
+  Rendered urls/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:52:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:52:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:52:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:52:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:52:19 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 08:52:44 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"https://www.google.com/search?site=&tbm=isch&source=hp&biw=1920&bih=1008&q=photo&oq=photo&gs_l=img.3..0l10.1918.2819.0.3009.5.5.0.0.0.0.106.371.2j2.4.0....0...1ac.1.53.img..1.4.369.WZ9Zn9gqSl0&gws_rd=ssl"}, "commit"=>"Submit"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"   ORDER BY "urls"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/urls/1
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 08:52:44 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:52:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:52:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:52:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:52:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:52:44 -0700
+
+
+Started GET "/aisdjflij" for 127.0.0.1 at 2014-09-10 08:52:50 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"aisdjflij"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aisdjflij' LIMIT 1[0m
+Redirected to http://google.com
+Completed 403 Forbidden in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/aisdjflij" for 127.0.0.1 at 2014-09-10 08:52:50 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"aisdjflij"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aisdjflij' LIMIT 1
+Redirected to http://google.com
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+  [1m[36mUrl Load (1.9ms)[0m  [1mSELECT "urls".* FROM "urls"[0m
+  [1m[35mUrl Load (0.6ms)[0m  SELECT "urls".* FROM "urls"  WHERE "urls"."id" IN (2, 3, 4)
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT "urls".* FROM "urls"  WHERE "urls"."id" IN (2, 3, 4)[0m
+  [1m[35mUrl Load (0.3ms)[0m  SELECT "urls".* FROM "urls"  WHERE "urls"."id" IN (2, 3, 4)
+  [1m[36mSQL (3.6ms)[0m  [1mDELETE FROM "urls" WHERE "urls"."id" = 2[0m
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM "urls" WHERE "urls"."id" = 3
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM "urls" WHERE "urls"."id" = 4[0m
+  [1m[35mUrl Load (0.2ms)[0m  SELECT "urls".* FROM "urls"
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"   ORDER BY "urls"."id" ASC LIMIT 1[0m
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."link" = 'https://www.google.com/search?site=&tbm=isch&source=hp&biw=1920&bih=1008&q=photo&oq=photo&gs_l=img.3..0l10.1918.2819.0.3009.5.5.0.0.0.0.106.371.2j2.4.0....0...1ac.1.53.img..1.4.369.WZ9Zn9gqSl0&gws_rd=ssl' LIMIT 1
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 08:55:44 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"https://www.google.com/search?site=&tbm=isch&source=hp&biw=1920&bih=1008&q=photo&oq=photo&gs_l=img.3..0l10.1918.2819.0.3009.5.5.0.0.0.0.106.371.2j2.4.0....0...1ac.1.53.img..1.4.369.WZ9Zn9gqSl0&gws_rd=ssl"}, "commit"=>"Submit"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."link" = 'https://www.google.com/search?site=&tbm=isch&source=hp&biw=1920&bih=1008&q=photo&oq=photo&gs_l=img.3..0l10.1918.2819.0.3009.5.5.0.0.0.0.106.371.2j2.4.0....0...1ac.1.53.img..1.4.369.WZ9Zn9gqSl0&gws_rd=ssl' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("code", "created_at", "link", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "aFxAD8KJ3WA"], ["created_at", "2014-09-10 15:55:44.513799"], ["link", "https://www.google.com/search?site=&tbm=isch&source=hp&biw=1920&bih=1008&q=photo&oq=photo&gs_l=img.3..0l10.1918.2819.0.3009.5.5.0.0.0.0.106.371.2j2.4.0....0...1ac.1.53.img..1.4.369.WZ9Zn9gqSl0&gws_rd=ssl"], ["updated_at", "2014-09-10 15:55:44.513799"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/urls/5
+Completed 302 Found in 13ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/urls/5" for 127.0.0.1 at 2014-09-10 08:55:44 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered urls/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:55:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:55:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:55:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:55:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:55:44 -0700
+
+
+Started GET "/aFxAD8KJ3WA" for 127.0.0.1 at 2014-09-10 08:55:48 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"aFxAD8KJ3WA"}
+  [1m[35mUrl Load (0.4ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aFxAD8KJ3WA' LIMIT 1
+Redirected to https://www.google.com/search?site=&tbm=isch&source=hp&biw=1920&bih=1008&q=photo&oq=photo&gs_l=img.3..0l10.1918.2819.0.3009.5.5.0.0.0.0.106.371.2j2.4.0....0...1ac.1.53.img..1.4.369.WZ9Zn9gqSl0&gws_rd=ssl
+Completed 403 Forbidden in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/aFxAD8KJ3WA" for 127.0.0.1 at 2014-09-10 08:55:48 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"aFxAD8KJ3WA"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aFxAD8KJ3WA' LIMIT 1[0m
+Redirected to https://www.google.com/search?site=&tbm=isch&source=hp&biw=1920&bih=1008&q=photo&oq=photo&gs_l=img.3..0l10.1918.2819.0.3009.5.5.0.0.0.0.106.371.2j2.4.0....0...1ac.1.53.img..1.4.369.WZ9Zn9gqSl0&gws_rd=ssl
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/aFxAD8KJ3WA/preview" for 127.0.0.1 at 2014-09-10 08:56:29 -0700
+Processing by UrlsController#preview as HTML
+  Parameters: {"code"=>"aFxAD8KJ3WA"}
+  [1m[35mUrl Load (0.3ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aFxAD8KJ3WA' LIMIT 1
+  Rendered urls/preview.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:56:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:56:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:56:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:56:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:56:29 -0700
+
+
+Started GET "/aFxAD8KJ3WA/preview" for 127.0.0.1 at 2014-09-10 08:57:10 -0700
+Processing by UrlsController#preview as HTML
+  Parameters: {"code"=>"aFxAD8KJ3WA"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aFxAD8KJ3WA' LIMIT 1[0m
+  Rendered urls/preview.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:57:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:10 -0700
+
+
+Started GET "/urls/5" for 127.0.0.1 at 2014-09-10 08:57:13 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUrl Load (0.4ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered urls/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:57:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:14 -0700
+
+
+Started GET "/urls/5" for 127.0.0.1 at 2014-09-10 08:57:46 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered urls/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:57:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:57:46 -0700
+
+
+Started GET "/urls/5" for 127.0.0.1 at 2014-09-10 08:58:20 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered urls/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:58:20 -0700
+
+
+Started GET "/urls/5" for 127.0.0.1 at 2014-09-10 08:58:41 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered urls/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:58:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:41 -0700
+
+
+Started GET "/urls/5" for 127.0.0.1 at 2014-09-10 08:58:59 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered urls/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:58:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:58:59 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:59:03 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.4ms)
+  Rendered urls/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:59:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 08:59:07 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.0ms)
+  Rendered urls/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:59:07 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 08:59:13 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"https://github.com/jeroenvandijk/capybara-mechanize"}, "commit"=>"Submit"}
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."link" = 'https://github.com/jeroenvandijk/capybara-mechanize' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "urls" ("code", "created_at", "link", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "Sg2Jt_nO56Q"], ["created_at", "2014-09-10 15:59:13.979152"], ["link", "https://github.com/jeroenvandijk/capybara-mechanize"], ["updated_at", "2014-09-10 15:59:13.979152"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/urls/6
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/urls/6" for 127.0.0.1 at 2014-09-10 08:59:13 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUrl Load (0.4ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered urls/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:59:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:14 -0700
+
+
+Started GET "/urls/6" for 127.0.0.1 at 2014-09-10 08:59:30 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered urls/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:59:30 -0700
+
+
+Started GET "/urls/6" for 127.0.0.1 at 2014-09-10 08:59:38 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered urls/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 08:59:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 08:59:38 -0700
+
+
+Started GET "/urls/6" for 127.0.0.1 at 2014-09-10 09:04:20 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered urls/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:04:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 09:04:25 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.2ms)
+  Rendered urls/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:25 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 09:04:36 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"https://github.com/jeroenvandijk/capybara-mechanize"}, "commit"=>"Submit"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."link" = 'https://github.com/jeroenvandijk/capybara-mechanize' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/urls/6
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/urls/6" for 127.0.0.1 at 2014-09-10 09:04:36 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered urls/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:04:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:04:36 -0700
+
+
+Started GET "/Sg2Jt_nO56Q/preview" for 127.0.0.1 at 2014-09-10 09:04:47 -0700
+Processing by UrlsController#preview as HTML
+  Parameters: {"code"=>"Sg2Jt_nO56Q"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'Sg2Jt_nO56Q' LIMIT 1[0m
+  Rendered urls/preview.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 63ms (Views: 60.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/0000000" for 127.0.0.1 at 2014-09-10 09:12:14 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"0000000"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = '0000000' LIMIT 1
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template urls/redirector, application/redirector with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/bbugh/projects/ritly/app/views"
+):
+  actionview (4.1.4) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.4) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.4) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.4) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.4) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.4) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/bbugh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/bbugh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/0000000" for 127.0.0.1 at 2014-09-10 09:12:26 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"0000000"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = '0000000' LIMIT 1[0m
+  Rendered urls/error.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 41.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:12:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:12:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:12:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:12:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:12:26 -0700
+
+
+Started GET "/0000000" for 127.0.0.1 at 2014-09-10 09:12:36 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"0000000"}
+  [1m[35mUrl Load (0.3ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = '0000000' LIMIT 1
+  Rendered urls/error.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:12:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:12:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:12:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:12:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:12:37 -0700
+
+
+Started GET "/urls/new" for 127.0.0.1 at 2014-09-10 09:12:42 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (4.7ms)
+  Rendered urls/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/0000000" for 127.0.0.1 at 2014-09-10 09:13:11 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"0000000"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."code" = '0000000' LIMIT 1[0m
+  Rendered urls/error.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:13:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:13:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:13:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:13:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:13:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 09:18:28 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (4.2ms)
+  Rendered urls/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:18:29 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 09:18:32 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"asdfasldcijascd"}, "commit"=>"Submit"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."link" = 'asdfasldcijascd' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("code", "created_at", "link", "updated_at") VALUES (?, ?, ?, ?)  [["code", "9LM4vEcWOCg"], ["created_at", "2014-09-10 16:18:32.367442"], ["link", "asdfasldcijascd"], ["updated_at", "2014-09-10 16:18:32.367442"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/urls/7
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/urls/7" for 127.0.0.1 at 2014-09-10 09:18:32 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUrl Load (0.3ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered urls/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:18:32 -0700
+
+
+Started GET "/urls/7" for 127.0.0.1 at 2014-09-10 09:18:38 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered urls/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/urls/7" for 127.0.0.1 at 2014-09-10 09:18:59 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUrl Load (1.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered urls/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 39.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:18:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:18:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:19:10 -0700
+
+
+Started GET "/urls/7" for 127.0.0.1 at 2014-09-10 09:19:20 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered urls/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:19:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:19:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:19:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:19:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:19:21 -0700
+
+
+Started GET "/urls/7" for 127.0.0.1 at 2014-09-10 09:19:53 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered urls/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:19:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:19:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:19:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:19:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:19:53 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 09:20:14 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"http://asdfasldcijascd.com"}, "commit"=>"Submit"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."link" = 'http://asdfasldcijascd.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "urls" ("code", "created_at", "link", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "NFudn8Aj8kg"], ["created_at", "2014-09-10 16:20:14.562990"], ["link", "http://asdfasldcijascd.com"], ["updated_at", "2014-09-10 16:20:14.562990"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/urls/8
+Completed 302 Found in 11ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/urls/8" for 127.0.0.1 at 2014-09-10 09:20:14 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered urls/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:20:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:20:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:20:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:20:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:20:14 -0700
+
+
+Started GET "/urls/8" for 127.0.0.1 at 2014-09-10 09:20:32 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered urls/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:20:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:20:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:20:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:20:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:20:32 -0700
+
+
+Started GET "/urls/8" for 127.0.0.1 at 2014-09-10 09:23:12 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered urls/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:23:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:23:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:23:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:23:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:23:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 09:26:40 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.7ms)
+  Rendered urls/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:26:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:26:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:26:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:26:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:26:40 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 09:26:42 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>""}, "commit"=>"Submit"}
+  [1m[35mUrl Load (0.5ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."link" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered urls/_form.html.erb (2.5ms)
+  Rendered urls/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 69ms (Views: 55.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:26:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:26:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:26:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:26:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:26:42 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 09:27:25 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>""}, "commit"=>"Submit"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."link" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered urls/_form.html.erb (2.1ms)
+  Rendered urls/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 09:27:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 09:27:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 09:27:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 09:27:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 09:27:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:08:32 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (2.0ms)
+  Rendered urls/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 55ms (Views: 41.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:08:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:08:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:08:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:08:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:08:32 -0700
+
+
+Started GET "/aslicdjaldc" for 127.0.0.1 at 2014-09-10 11:08:40 -0700
+Processing by UrlsController#redirector as HTML
+  Parameters: {"code"=>"aslicdjaldc"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."code" = 'aslicdjaldc' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:08:40 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.6ms)
+  Rendered urls/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:08:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:08:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:08:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:08:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:08:40 -0700
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "urls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hash_code" varchar(255), "link" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140910024005')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:25:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (5.6ms)
+  Rendered urls/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 49ms (Views: 38.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:25:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:25:39 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.8ms)
+  Rendered urls/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:25:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:25:56 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (2.3ms)
+  Rendered urls/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:25:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:25:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:26:00 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (3.8ms)
+  Rendered urls/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:26:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:26:16 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.2ms)
+  Rendered urls/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:26:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:16 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 11:26:18 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>""}, "commit"=>"Create short URL"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."link" = '' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered urls/_form.html.erb (3.0ms)
+  Rendered urls/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 51ms (Views: 44.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:26:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:19 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 11:26:21 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>""}, "commit"=>"Create short URL"}
+  [1m[36mUrl Load (0.2ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."link" = '' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered urls/_form.html.erb (1.7ms)
+  Rendered urls/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 40.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:26:21 -0700
+
+
+Started POST "/urls" for 127.0.0.1 at 2014-09-10 11:26:45 -0700
+Processing by UrlsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeBrC4SA4rQlqJUn+gunXUooq+TP4SUVsEH+UwKGOrY=", "url"=>{"link"=>"http://shousdafup.com"}, "commit"=>"Create short URL"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."link" = 'http://shousdafup.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "hash_code", "link", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-09-10 18:26:45.593787"], ["hash_code", "-oFDJy_ydhk"], ["link", "http://shousdafup.com"], ["updated_at", "2014-09-10 18:26:45.593787"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/urls/1
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:26:45 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:26:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:26:45 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:27:39 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:28:00 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 75ms (Views: 55.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:28:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:28:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:28:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:28:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:28:01 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:28:17 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:28:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:28:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:28:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:28:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:28:17 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:29:51 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.1ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:29:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:29:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:29:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:29:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:29:52 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:30:44 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:30:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:30:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:30:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:30:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:30:44 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:31:01 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 40.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:31:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:31:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:31:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:31:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:31:01 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-10 11:31:08 -0700
+Processing by UrlsController#new as HTML
+  Rendered urls/_form.html.erb (1.8ms)
+  Rendered urls/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:31:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:31:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:31:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:31:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:31:08 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:34:12 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 36.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:34:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:34:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:34:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:34:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:34:13 -0700
+
+
+Started GET "/-oFDJy_ydhk/preview" for 127.0.0.1 at 2014-09-10 11:34:39 -0700
+Processing by UrlsController#preview as HTML
+  Parameters: {"hash_code"=>"-oFDJy_ydhk"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."hash_code" = '-oFDJy_ydhk' LIMIT 1
+  Rendered urls/preview.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:34:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:34:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:34:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:34:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:34:40 -0700
+
+
+Started GET "/urls/1" for 127.0.0.1 at 2014-09-10 11:36:19 -0700
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUrl Load (0.1ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered urls/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:36:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:36:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:36:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:36:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:36:19 -0700
+
+
+Started GET "/-oFDJy_ydhk/preview" for 127.0.0.1 at 2014-09-10 11:36:26 -0700
+Processing by UrlsController#preview as HTML
+  Parameters: {"hash_code"=>"-oFDJy_ydhk"}
+  [1m[35mUrl Load (0.2ms)[0m  SELECT  "urls".* FROM "urls"  WHERE "urls"."hash_code" = '-oFDJy_ydhk' LIMIT 1
+  Rendered urls/preview.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:36:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:36:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:36:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:36:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:36:27 -0700
+
+
+Started GET "/-oFDJy_ydhk/preview" for 127.0.0.1 at 2014-09-10 11:37:12 -0700
+Processing by UrlsController#preview as HTML
+  Parameters: {"hash_code"=>"-oFDJy_ydhk"}
+  [1m[36mUrl Load (0.5ms)[0m  [1mSELECT  "urls".* FROM "urls"  WHERE "urls"."hash_code" = '-oFDJy_ydhk' LIMIT 1[0m
+  Rendered urls/preview.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 11:37:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 11:37:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 11:37:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 11:37:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 11:37:12 -0700

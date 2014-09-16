@@ -1,0 +1,11 @@
+<ul>
+  <% @url.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ul>
+
+<%= form_for @url do |f| %>
+  <b><%= f.label :link, "URL to shorten:" %></b>
+  <%= f.text_field :link %>
+  <%= f.submit 'Create short URL' %>
+<% end %>
