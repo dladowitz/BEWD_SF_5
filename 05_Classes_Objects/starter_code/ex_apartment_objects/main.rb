@@ -13,6 +13,7 @@
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
+require 'pry'
 
 ## First, define our methods
 
